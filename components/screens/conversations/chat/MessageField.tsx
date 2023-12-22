@@ -20,7 +20,7 @@ export default function MessageField({
 
 	const [saveMessage, { isLoading }] = useSaveMessageMutation()
 
-	const inputAreaRef = useRef<any>()
+	const inputAreaRef = useRef<HTMLTextAreaElement>(null)
 	const textareaRef = useRef<HTMLDivElement>(null)
 	
 
