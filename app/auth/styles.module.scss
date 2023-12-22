@@ -17,7 +17,7 @@
     height: 100vh;
     position: relative;
     display: flex;
-    
+
 
 }
 
@@ -30,8 +30,11 @@
 .loginBlock {
     margin-right: 140px;
     margin-left: auto;
-    margin-bottom: 325px;
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*  margin-bottom: 325px; */
+    /* margin-top: auto; */
 
 }
 
@@ -47,7 +50,8 @@
     padding: 11px 20px;
     border-radius: 24px;
     border: 1px solid rgba(246, 246, 246, 0.40);
-    &:hover{
+
+    &:hover {
         background-color: #668FFF;
     }
 }

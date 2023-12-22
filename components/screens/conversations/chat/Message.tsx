@@ -6,6 +6,7 @@ import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
+import styles from "./Message.module.scss"
 import { SSE } from 'sse'
 
 export default function Message({ message }: { message: IMessage }) {
@@ -98,7 +99,8 @@ export default function Message({ message }: { message: IMessage }) {
 						<p className='text-texthover text-semibold text-lg pb-2'>
 							{isSender ? 'Ты' : 'Ассистент'}
 						</p>
-						<div className='text-sm text-textlight '>
+						<div className={'text-sm text-textlight ' + styles.message}
+						style={{paddingRight:"12px"}}>
 							<ReactMarkdown>{message.content}</ReactMarkdown>
 						</div>
 					</div>
@@ -122,7 +124,7 @@ const ExtraComponent = ({ streamResponse }: { streamResponse: any }) => {
 				/>
 				<div className='ml-6 flex flex-col'>
 					<p className='text-texthover text-semibold text-lg pb-2'>Ассистент</p>
-					<div className='text-sm text-textlight '>
+					<div className={'text-sm text-textlight ' + styles.message}>
 						<ReactMarkdown>{streamResponse}</ReactMarkdown>
 					</div>
 				</div>
