@@ -73,6 +73,7 @@ export default function ChatsList() {
 			>
 				<button
 					className='w-full flex justify-between bg-opacity-0 text-sm'
+					style={{width:"255px"}}
 					onClick={handleCreateChat}
 					disabled={isCreateChatLoading}
 					

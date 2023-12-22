@@ -68,7 +68,7 @@ export default function ChatListItem({ chat }: IChatListItem) {
 			rounded-lg cursor-pointer hover:bg-bgchatmessage animation-slide-fade ${
 				isActive ? 'bg-bgchatmessage' : ''
 			}`}
-			style={{marginBottom:"4px", width:"255px",zIndex:"2"}}
+			style={{marginBottom:"4px", width:"272px",zIndex:"2"}}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 		>

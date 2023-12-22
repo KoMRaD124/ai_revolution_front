@@ -3,11 +3,13 @@ import { useState } from 'react'
 const Template = ({
 	onClickTemplate,
 	templateText,
-	templateName
+	templateName,
+	templateDescription
 }: {
 	onClickTemplate: (templateText: string) => void
 	templateText: string
 	templateName: string
+	templateDescription:string
 }) => {
 	const [isHovered, setIsHovered] = useState(false)
 
@@ -40,7 +42,7 @@ const Template = ({
 					<div
 						className={`text-sm text-textlight ${isHovered ? 'hovered' : ''}`}
 					>
-						{templateText}
+						{templateDescription}
 					</div>
 				</div>
 			</div>
