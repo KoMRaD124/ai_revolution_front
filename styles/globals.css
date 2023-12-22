@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	font-family: var(--font-inter);
+}
+
+section {
+	max-width: 1920px;
+}
+
+input:-webkit-autofill {
+	transition-delay: 9999s;
+	-webkit-transition-property: background-color;
+	transition-property: background-color;
+}
+
+.animation-slide-fade {
+	animation: slideFade 0.7s;
+}
+
+.animation-slide-fade:hover {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@keyframes slideFade {
+	from {
+		transform: translateY(-22px);
+		opacity: 0.4;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.chatsContainer::-webkit-scrollbar {
+	width: 8px;
+}
+
+.chatsContainer::-webkit-scrollbar-thumb {
+	background-color: #2e2d8c;
+	border-radius: 4px;
+}
+
+.chatsContainer::-webkit-scrollbar-track {
+	background-color: #bababa;
+}
+
+.bg-inactive-button {
+	background-color: #878890;
+}

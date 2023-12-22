@@ -1,0 +1,133 @@
+.chatting-wrapper {
+	display: flex;
+}
+
+.icon-custom {
+	font-size: 1.5rem;
+	color: light;
+}
+
+.mobile_custom_menu {
+	font-size: 1.5rem;
+	color: light;
+}
+
+.icon_size {
+	font-size: 1.5rem;
+}
+
+/* //CONTAINER */
+#chat_container {
+	flex: 1;
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding-bottom: 150px;
+	align-items: flex-start;
+}
+
+.message {
+	margin: 8px;
+	padding: 8px;
+	border-radius: 8px;
+	max-width: 70%;
+}
+
+.user-message {
+	background-color: #e2f0cb; /* Пример цвета для сообщений от пользователя */
+}
+
+.robot-message {
+	background-color: #c2dfff; /* Пример цвета для сообщений от робота */
+	align-self: flex-end; /* Сообщения от робота справа */
+}
+
+.wrapper {
+	width: 100%;
+	padding: 15px;
+}
+
+.chat {
+	width: 100%;
+	min-width: 180px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.profile {
+	width: 36px;
+	height: 36px;
+	border-radius: 5px;
+	background: #fd7e14;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ai .profile {
+	background: #10a37f;
+}
+
+.profile img {
+	width: 60%;
+	height: 60%;
+	object-fit: contain;
+}
+
+/* .message {
+	flex: 1;
+	color: #3bedb2;
+	white-space: pre-wrap;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+} */
+
+.new_space {
+	padding: 0 1rem;
+}
+
+/* Стили для всех элементов <li> */
+#innerLink li {
+	margin-top: 8px;
+	padding: 8px;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+/* Стили для активного элемента */
+#innerLink li.active a {
+	color: #cc460a;
+	font-weight: bold;
+}
+
+/* Остальные стили */
+#innerLink li a {
+	text-decoration: none;
+	color: #000; /* Ваш цвет текста для неактивных элементов */
+}
+
+.tab {
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(0, 50px);
+}
+
+.active-tab,
+.active-button {
+	transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+.active-tab {
+	visibility: visible;
+	opacity: 1;
+	transform: translate(0, 0);
+	z-index: 99;
+}
+.active-button {
+	background: white !important;
+	color: #3730a3;
+}

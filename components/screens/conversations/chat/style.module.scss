@@ -1,0 +1,44 @@
+.MessageFieldInputContainer{
+    width: 750px;
+   
+    margin-bottom: 34px;
+}
+.ChatTemplateButtonContainer{
+    margin-top: auto;
+    width: 750px;
+    display: flex;
+    
+}
+.ChatTemplateButtonContent{
+    margin-left: auto;
+}
+.TemplateContainer{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(21, 23, 30);
+    border-left: 1px solid var(--White-White-pale, rgba(246, 246, 246, 0.40));
+
+}
+.TemplateContent{
+    margin-top: 63px;
+    display: flex;
+    justify-content: center;
+}
+.templateButtonClose{
+    cursor: pointer;
+    position:absolute;
+    top: 60px;;
+    right:48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    &:hover{
+        background-color:#3F4657 ;
+    }
+}

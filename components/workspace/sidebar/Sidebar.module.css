@@ -1,0 +1,27 @@
+.sidebar {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #2e2d8c;
+	border-right: 1px solid #bababa;
+}
+
+.sidebar a {
+	margin-bottom: 8px;
+	display: block;
+	padding: 1.25rem;
+}
+
+.sidebar a.active > svg {
+	color: #ee881f;
+}
+
+.sidebar svg {
+	color: #bababa;
+	transition: color 300ms ease-in-out;
+}
+
+.sidebar svg:hover {
+	color: #ee881f;
+}
