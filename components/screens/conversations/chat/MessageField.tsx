@@ -21,7 +21,7 @@ export default function MessageField({
 	const [saveMessage, { isLoading }] = useSaveMessageMutation()
 
 	const textareaRef = useRef<HTMLDivElement>(null)
-	const inputAreaRef = useRef<HTMLDivElement>(null)
+	const inputAreaRef = useRef<HTMLDivElement | null>(null)
 
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
@@ -32,8 +32,10 @@ export default function MessageField({
 				setIsClicked(false)
 			}
 		}
+		if (inputAreaRef.current !== null){
+			inputAreaRef.current.style.height = `${inputAreaRef.current.scrollHeight}px`;
+		}
 		
-		inputAreaRef.current.style.height = `${inputAreaRef.current.scrollHeight}px`;
 		
 
 		return () => {
