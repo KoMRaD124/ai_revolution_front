@@ -111,7 +111,7 @@ export default function Message({ message }: { message: IMessage }) {
 
 const ExtraComponent = ({ streamResponse }: { streamResponse: any }) => {
 	return (
-		<div className='flex justify-start mb-4 px-10'>
+		<div className='flex justify-start '>
 			<div className='relative flex items-start'>
 				<Image
 					src='/AI-Avatar.png'
