@@ -11,8 +11,8 @@ import Link from 'next/link'
 import { Chat } from '@/components/screens/conversations'
 
 export const metadata: Metadata = {
-    title: 'CreaCraft',
-    description: 'CreaCraft',
+    title: 'DeepLine',
+    description: 'DeepLine',
 }
 
 export default function Page() {

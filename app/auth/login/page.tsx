@@ -5,8 +5,8 @@ import {
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-	title: 'CreaCraft | Вход',
-	description: 'CreaCraft login page',
+	title: 'DeepLine | Вход',
+	description: 'DeepLine login page',
 }
 
 export default function Page() {

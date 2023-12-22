@@ -12,7 +12,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-	title: 'CreaCraft',
+	title: 'DeepLine',
 	description: 'AI Revolution application',
 }
 

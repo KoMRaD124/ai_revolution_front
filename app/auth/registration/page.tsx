@@ -2,8 +2,8 @@ import { FormsScreensLayout, RegFormPage } from '@/components/screens/authForms'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-	title: 'CreaCraft | Регистрация',
-	description: 'Сreate your account on CreaCraft',
+	title: 'DeepLine | Регистрация',
+	description: 'Сreate your account on DeepLine',
 }
 
 export default function Page() {
