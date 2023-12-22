@@ -1,5 +1,5 @@
 {
-  "extends": "next/core-web-vitals",
-  "ignoreDuringBuilds": "true"
+  "extends": "next/core-web-vitals"
+  
   
 }

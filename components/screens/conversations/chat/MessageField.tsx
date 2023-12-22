@@ -20,8 +20,9 @@ export default function MessageField({
 
 	const [saveMessage, { isLoading }] = useSaveMessageMutation()
 
+	const inputAreaRef = useRef<any>()
 	const textareaRef = useRef<HTMLDivElement>(null)
-	const inputAreaRef = useRef<HTMLDivElement | null>(null)
+	
 
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
