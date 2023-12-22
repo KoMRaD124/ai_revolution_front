@@ -32,7 +32,7 @@ export const chatApiSlice = apiSlice.injectEndpoints({
 			}),
 			invalidatesTags: [{ type: 'Chat', id: 'LIST' }],
 		}),
-		getMessageList: builder.query<IChat, { id: UUID | null }>({
+		getMessageList: builder.query<IChat, { id: UUID | null | undefined }>({
 			query: ({ id }) => `/conversations/${id}/messages/list/`,
 			providesTags: [{ type: 'CurrentChat', id: 'LIST' }],
 		}),
