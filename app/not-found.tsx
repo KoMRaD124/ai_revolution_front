@@ -1,14 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-
+import style from "./styles.module.scss"
 export default function NotFound() {
 const [isHovered, setIsHovered] = useState(false);
 
 return (
-  <main className="grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8 relative">
-	<Image src="/404bg.png" alt="404 Background" layout="fill" objectFit="cover" />
-	<div className="text-center relative z-10 text-white">
+		
+  <main className={"grid min-h-full place-items-center bg-white px-6 py-24 sm:py-32 lg:px-8 relative " + style.bg}>
+	 <div className="absolute top-0 left-0 mt-12 ml-12 z-20">
+        <Image src="/CREACRAFT.svg" alt="CREACRAFT Logo" width={120} height={16} />
+      </div>
+	 
+{/* 	<Image src="/404bg.png" alt="404 Background" layout="fill" objectFit="cover" />
+ */}	<div className="text-center relative z-10 text-white">
 	  <div className="flex items-center justify-center">
 		<p className="text-base font-semibold text-indigo-600">
 		  <Image src="/404.png" alt="404" width={350} height={350} />

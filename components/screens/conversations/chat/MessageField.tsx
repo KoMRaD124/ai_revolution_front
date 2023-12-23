@@ -38,6 +38,7 @@ export default function MessageField({
 		}
 		
 		
+		
 
 		return () => {
 			document.removeEventListener('mousedown', handleClickOutside)
@@ -50,11 +51,15 @@ export default function MessageField({
 		try {
 			await saveMessage({ id, content: message, role: 'user' }).unwrap()
 			setMessage('')
+			if (inputAreaRef.current !== null){
+				inputAreaRef.current.style.height = `45px`;
+			}
 			localStorage.setItem('isStreaming', 'true')
 			setIsClicked(true)
 		} catch (error) {
 			console.error('Error sending message:', error)
 		}
+
 	}
 
 	const handleTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {

@@ -1,6 +1,6 @@
 import { ActivationCompleteForm } from '@/components/forms'
 import type { Metadata } from 'next'
-
+import styles from "./style.module.scss"
 export const metadata: Metadata = {
 	title: 'AI Revolution | Activation complete',
 	description: 'AI Revolution activation complete page',
@@ -10,7 +10,18 @@ export default function Page() {
 	return (
 		<div className='flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8'>
 			<div className='sm:mx-auto sm:w-full sm:max-w-sm'>
-				<img
+				<div className={styles.formContainer}>
+					<h1 className={styles.header}>Успешно</h1>
+					<h2 className={styles.text}>Осталось совсем чуть-чуть...
+						<br /> Проверьте свою почту, мы отправили вам ссылку на активацию</h2>
+
+					<button className={styles.button}>
+						<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
+							<ActivationCompleteForm />
+						</div>
+					</button>
+				</div>
+				{/* <img
 					className='mx-auto h-10 w-auto'
 					src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
 					alt='AI Revolution'
@@ -30,7 +41,7 @@ export default function Page() {
 				</div>
 				<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'>
 					<ActivationCompleteForm />
-				</div>
+				</div> */}
 			</div>
 
 			<div className='mt-10 sm:mx-auto sm:w-full sm:max-w-sm'></div>

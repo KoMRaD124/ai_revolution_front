@@ -100,7 +100,7 @@ export default function Message({ message }: { message: IMessage }) {
 							{isSender ? 'Ты' : 'Ассистент'}
 						</p>
 						<div className={'text-sm text-textlight ' + styles.message}
-						style={{paddingRight:"12px"}}>
+						style={{paddingRight:"24px"}}>
 							<ReactMarkdown>{message.content}</ReactMarkdown>
 						</div>
 					</div>
@@ -124,7 +124,8 @@ const ExtraComponent = ({ streamResponse }: { streamResponse: any }) => {
 				/>
 				<div className='ml-6 flex flex-col'>
 					<p className='text-texthover text-semibold text-lg pb-2'>Ассистент</p>
-					<div className={'text-sm text-textlight ' + styles.message}>
+					<div className={'text-sm text-textlight ' + styles.message}
+					style={{paddingRight:"24px"}}>
 						<ReactMarkdown>{streamResponse}</ReactMarkdown>
 					</div>
 				</div>
