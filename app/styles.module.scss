@@ -30,8 +30,9 @@
 .loginBlock {
     margin-right: 140px;
     margin-left: auto;
-    margin-bottom: 325px;
-    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
