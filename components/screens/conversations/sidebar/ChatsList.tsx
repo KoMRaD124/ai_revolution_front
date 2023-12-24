@@ -22,7 +22,7 @@ import Image from 'next/image'
 import logo from  "@/public/CREACRAFT.svg"
 import sideTop from "@/public/sidebarTop.svg"
 import sideBot from "@/public/sidebarBottom.svg"
-import userAva from "@/public/no-avatar.png"
+import userAva from "@/public/AI-Avatar.png"
 
 export default function ChatsList() {
 	const dispatch = useAppDispatch()
