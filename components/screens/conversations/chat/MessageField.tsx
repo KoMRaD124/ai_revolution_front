@@ -116,6 +116,12 @@ export default function MessageField({
 						onFocus={handleTextareaFocus}
 						onBlur={handleTextareaBlur}
 						ref={inputAreaRef}
+						onKeyDown={(e) => {
+							if (e.key === 'Enter' && e.shiftKey === false) {
+							  e.preventDefault();
+							  onSubmit();
+							}
+						  }}
 						className={`w-full field ${isClicked ? 'border-blue-500' : ''}`}
 						style={{
 							height:"45px",
